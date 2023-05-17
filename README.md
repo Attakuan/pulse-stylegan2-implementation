@@ -32,6 +32,6 @@ For a detailed configuration procedure, I recommend cheking the [original reposi
 
 ## Example Results
 ---
-![](https://github.com/Attakuan/pulse-stylegan2-implementation/tree/main/readme_resources/Pulse_ExampleAtakan.jpeg)
+![](https://github.com/Attakuan/pulse-stylegan2-implementation/tree/main/readme_resources/Pulse_ExampleAtakan.png)
 
 
