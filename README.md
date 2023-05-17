@@ -7,6 +7,10 @@
 
  The link to the StyleGAN2 generator weights: https://drive.google.com/file/d/1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4/view?usp=share_link
  
+ ## Usage
+
+The main file of interest for applying PULSE is `run.py`.
+ 
  
  ### Prereqs
  Setting up a local environment for StyleGAN2 can be problematic. Thus, I recommed cheking this [link](https://youtu.be/BCde68k6KXg).
