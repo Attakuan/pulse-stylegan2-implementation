@@ -30,9 +30,8 @@ conda activate pulse
 For a detailed configuration procedure, I recommend cheking the [original repository](https://github.com/adamian98/pulse) and the [Youtube link](https://youtu.be/sRu5j-mzOy0). 
 
 
-
+## Example Results
 ---
-
-![Transformation Preview](./readme_resources/Pulse_ExampleAtakan.jpeg)
+![](./readme_resources/Pulse_ExampleAtakan.jpeg)
 
 
