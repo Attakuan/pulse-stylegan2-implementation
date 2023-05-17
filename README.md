@@ -22,3 +22,5 @@ or (Anaconda on Windows):
 conda env create -n pulse -f pulse.yml
 conda activate pulse
 ```
+
+For a detailed configuration procedure, I recommend cheking the [original repository](https://github.com/adamian98/pulse) and the [Youtube link](https://youtu.be/sRu5j-mzOy0). 
