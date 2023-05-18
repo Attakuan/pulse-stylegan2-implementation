@@ -25,7 +25,9 @@ class PULSE(torch.nn.Module):
         '''
         
         with open_url("https://drive.google.com/uc?export=download&id=1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4", cache_dir=cache_dir, verbose=verbose) as f:
-             self.generator.load_state_dict(torch.load(f,map_location='cpu'),strict=True)
+                gen_pretrained = torch.load(f)
+               
+                self.generator.load_state_dict(gen_pretrained,strict=True)
 
         for param in self.generator.parameters():
             param.requires_grad = False
