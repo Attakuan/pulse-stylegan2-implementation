@@ -17,8 +17,17 @@ class PULSE(torch.nn.Module):
         cache_dir = Path(cache_dir)
         cache_dir.mkdir(parents=True, exist_ok = True)
         if self.verbose: print("Loading StyleGAN2 Network")
+        '''
         gen_pretrained = torch.load('generator.pth', map_location='cpu')
         self.generator.load_state_dict(gen_pretrained, strict=True)
+        print("StyleGAN2 succesfully loaded")
+        '''
+        
+        with open_url("https://drive.google.com/file/d/1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4/view?usp=share_link", cache_dir=cache_dir, verbose=verbose) as f:
+            self.synthesis.load_state_dict(torch.load(f,map_location='cpu')))
+
+        for param in self.synthesis.parameters():
+            param.requires_grad = False
         print("StyleGAN2 succesfully loaded")
 
         self.lrelu = torch.nn.LeakyReLU(negative_slope=0.2)
