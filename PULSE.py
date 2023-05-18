@@ -6,6 +6,7 @@ import torch
 from loss import LossBuilder
 from functools import partial
 from stylegan2 import Generator
+from drive import open_url
 
 class PULSE(torch.nn.Module):
     def __init__(self, cache_dir, verbose=True):
