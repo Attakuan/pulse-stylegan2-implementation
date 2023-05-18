@@ -9,7 +9,7 @@ from stylegan2 import Generator
 from drive import open_url
 
 class PULSE(torch.nn.Module):
-    def __init__(self, cache_dir,pt_path,verbose=True):
+    def __init__(self, cache_dir,verbose=True):
         super(PULSE, self).__init__()
 
         self.verbose = verbose
@@ -19,7 +19,7 @@ class PULSE(torch.nn.Module):
         cache_dir.mkdir(parents=True, exist_ok = True)
         if self.verbose: print("Loading StyleGAN2 Network")
        
-        gen_pretrained = torch.load(pt_path, map_location="gpu")
+        gen_pretrained = torch.load("generator.pth", map_location="gpu")
         self.generator.load_state_dict(gen_pretrained, strict=True)
         print("StyleGAN2 succesfully loaded")
 
