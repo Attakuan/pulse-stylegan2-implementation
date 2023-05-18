@@ -9,7 +9,7 @@ from stylegan2 import Generator
 from drive import open_url
 
 class PULSE(torch.nn.Module):
-    def __init__(self, cache_dir,pt_path, verbose=True):
+    def __init__(self, cache_dir,pt_path,verbose=True):
         super(PULSE, self).__init__()
 
         self.verbose = verbose
