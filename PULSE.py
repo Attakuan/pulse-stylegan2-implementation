@@ -19,13 +19,13 @@ class PULSE(torch.nn.Module):
         cache_dir.mkdir(parents=True, exist_ok = True)
         if self.verbose: print("Loading StyleGAN2 Network")
         '''
-        gen_pretrained = torch.load('generator.pth', map_location='cpu')
+        gen_pretrained = torch.load('generator.pth', map_location='gpu')
         self.generator.load_state_dict(gen_pretrained, strict=True)
         print("StyleGAN2 succesfully loaded")
         '''
         
         with open_url("https://drive.google.com/uc?export=download&id=1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4", cache_dir=cache_dir, verbose=verbose) as f:
-                gen_pretrained = torch.load(f)
+                gen_pretrained = torch.load(f,map_location='cpu')
                
                 self.generator.load_state_dict(gen_pretrained,strict=True)
 
