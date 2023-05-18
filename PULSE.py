@@ -24,7 +24,7 @@ class PULSE(torch.nn.Module):
         print("StyleGAN2 succesfully loaded")
         '''
         
-        with open_url("https://drive.google.com/file/d/1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4/view?usp=share_link", cache_dir=cache_dir, verbose=verbose) as f:
+        with open_url("https://drive.google.com/uc?export=download&id=1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4", cache_dir=cache_dir, verbose=verbose) as f:
              self.generator.load_state_dict(torch.load(f,map_location='cpu'),strict=True)
 
         for param in self.generator.parameters():
