@@ -18,13 +18,13 @@ class PULSE(torch.nn.Module):
         cache_dir = Path(cache_dir)
         cache_dir.mkdir(parents=True, exist_ok = True)
         if self.verbose: print("Loading StyleGAN2 Network")
-       
+        '''
         gen_pretrained = torch.load("https://drive.google.com/uc?id=1GvqxkJ9BdRj_RNEvj2sY2B8V_qyaY6E7", map_location="cpu")
         self.generator.load_state_dict(gen_pretrained, strict=True)
         print("StyleGAN2 succesfully loaded")
-
         '''
-        with open_url("https://drive.google.com/uc?export=download&id=13CmJHEOOH0XQiLk0E0_YKxPeubi557RY", cache_dir=cache_dir, verbose=verbose) as f:
+        
+        with open_url("https://drive.google.com/uc?id=1GvqxkJ9BdRj_RNEvj2sY2B8V_qyaY6E7", cache_dir=cache_dir, verbose=verbose) as f:
                 gen_pretrained = torch.load(f,map_location='cpu', persistent_load=persistent_load)
                
                 self.generator.load_state_dict(gen_pretrained,strict=True)
@@ -32,7 +32,7 @@ class PULSE(torch.nn.Module):
         for param in self.generator.parameters():
             param.requires_grad = False
         print("StyleGAN2 succesfully loaded")
-        '''
+   
         self.lrelu = torch.nn.LeakyReLU(negative_slope=0.2)
 
         if Path("gaussian_fit.pt").exists():
