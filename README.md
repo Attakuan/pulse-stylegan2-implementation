@@ -19,11 +19,11 @@ The main file of interest for applying PULSE is `run.py`.
  For the full set of required Python packages, create a Conda environment from the provided YAML, e.g.
 
 ```
-conda create -f pulse.yml 
+conda create -f environment.yml 
 ```
 or (Anaconda on Windows):
 ```
-conda env create -n pulse -f pulse.yml
+conda env create -n pulse -f environment.yml
 conda activate pulse
 ```
 
