@@ -8,7 +8,6 @@
  The link to the StyleGAN2 generator weights: https://drive.google.com/file/d/1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4/view?usp=share_link
  
  The interactive colab for Pulse-StyleGAN2: https://colab.research.google.com/drive/1Nmbr0rT-SloCjnq9x-hU-yGsbmeSU0Y6?usp=share_link
- 
  ## Usage
 
 The main file of interest for applying PULSE is `run.py`.
