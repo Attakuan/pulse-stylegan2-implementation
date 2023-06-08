@@ -5,8 +5,8 @@
  
  Paper link: https://arxiv.org/pdf/2003.03808.pdf
 
- The link to the StyleGAN2 generator weights: https://drive.google.com/file/d/1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4/view?usp=share_link
- 
+ The link to the StyleGAN2 generator weights: https://drive.google.com/file/d/1wtNy8XyvRzwX-5eqnq82hhwyvtXUIoz4/view?usp=share_link 
+ ( The generator weights have already been uploaded and added to StyleGAN and StyleGAN2 folders provided in links below.)
  
  The interactive colab for Multimodal Pulse-StyleGAN2 and Pulse-StyleGAN: https://colab.research.google.com/drive/1scOTnPCa_zWSZ4bI1jWQVdx9G31J8K_s?usp=sharing
 
