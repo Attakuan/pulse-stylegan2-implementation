@@ -11,6 +11,7 @@
  The interactive colab for Multimodal Pulse-StyleGAN2 and Pulse-StyleGAN: https://colab.research.google.com/drive/1scOTnPCa_zWSZ4bI1jWQVdx9G31J8K_s?usp=sharing
  You can directly download these folder and upload on your drive. After arranging the paths, you can run above colab. 
  StyleGAN: https://drive.google.com/drive/folders/1gmR0K1BmIw5SptByh_5Ouq0L4R7B1eXJ?usp=sharing
+ 
  StyleGAN2: https://drive.google.com/drive/folders/1TIdvEwRrcnirWOBwtm3M7c3qiatn2ehl?usp=sharing
  ## Usage
 
