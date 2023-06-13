@@ -15,7 +15,7 @@ You can directly download below folders  and upload them on your drive. After ar
  StyleGAN: https://drive.google.com/drive/folders/1gmR0K1BmIw5SptByh_5Ouq0L4R7B1eXJ?usp=sharing
  
  StyleGAN2: https://drive.google.com/drive/folders/1TIdvEwRrcnirWOBwtm3M7c3qiatn2ehl?usp=sharing
- ## Usage
+ ## How to Run
 
 The main file of interest for applying PULSE is `run.py`.
  
